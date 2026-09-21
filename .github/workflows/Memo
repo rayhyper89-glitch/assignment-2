@@ -1,1 +1,7 @@
+My linked list works by using two classes: Node and LinkedList. The Node class represents one customer in the waitlist. Each node stores the customer's name and has a next pointer that points to the next node in the list. The LinkedList class manages all of the nodes and keeps track of the beginning of the list.
 
+The head is one of the most important parts of the linked list because it points to the first node. When the list is empty, head is set to None. When a customer is added to the front, the new node becomes the head and its next pointer points to the previous head. When a customer is removed from the front, the head is updated to point to the next node. The program can then follow each next pointer to move through the entire list.
+
+The add_end() method works by starting at the head and following the next pointers until it reaches the last node. It then connects the new node to the end. The remove() method searches through the list for a matching name and changes the appropriate next pointer to skip over the node being removed.
+
+A real engineer might need a custom linked list when they need flexible data that frequently changes in size. Linked lists can be useful when adding or removing items is more important than quickly accessing an item by its position. Examples could include waitlists, queues, task management systems, or other applications where items are frequently added and removed.
